@@ -69,9 +69,7 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <BCC_UseClassicCompiler>false</BCC_UseClassicCompiler>
-        <BPILibOutputDir>C:\Projects\tllib-proj\libs\</BPILibOutputDir>
         <Manifest_File>None</Manifest_File>
-        <VerInfo_Keys>FileVersion=1.0.0.0</VerInfo_Keys>
         <PackageImports>adortl;appanalytics;bcbie;bcbsmp;bindcomp;bindcompdbx;bindcompfmx;bindcompvcl;bindengine;CloudService;CustomIPTransport;DataSnapClient;DataSnapCommon;DataSnapConnectors;DatasnapConnectorsFreePascal;DataSnapFireDAC;DataSnapIndy10ServerTransport;DataSnapNativeClient;DataSnapProviderClient;DataSnapServer;DataSnapServerMidas;dbexpress;dbrtl;dbxcds;DbxClientDriver;DbxCommonDriver;DBXDb2Driver;DBXFirebirdDriver;DBXInformixDriver;DBXInterBaseDriver;DBXMSSQLDriver;DBXMySQLDriver;DBXOdbcDriver;DBXOracleDriver;DBXSqliteDriver;DBXSybaseASADriver;DBXSybaseASEDriver;dsnap;dsnapcon;dsnapxml;emsclient;emsclientfiredac;FireDAC;FireDACADSDriver;FireDACASADriver;FireDACCommon;FireDACCommonDriver;FireDACDb2Driver;FireDACDBXDriver;FireDACDSDriver;FireDACIBDriver;FireDACInfxDriver;FireDACMongoDBDriver;FireDACMSAccDriver;FireDACMSSQLDriver;FireDACMySQLDriver;FireDACODBCDriver;FireDACOracleDriver;FireDACPgDriver;FireDACSqliteDriver;FireDACTDataDriver;fmx;fmxase;fmxdae;fmxFireDAC;fmxobj;FMXTee;FmxTeeUI;frx23;frxDB23;frxe23;frxTee23;ibmonitor;ibxbindings;ibxpress;IndyCore;IndyIPClient;IndyIPCommon;IndyIPServer;IndyProtocols;IndySystem;inet;inetdb;inetdbxpress;Intraweb;RESTBackendComponents;RESTComponents;rtl;soapmidas;soaprtl;soapserver;svn;Tee;TeeDB;TeeUI;tethering;vcl;vclactnband;vcldb;vcldsnap;vclFireDAC;vclib;vclie;vclimg;VCLRESTComponents;vclribbon;VclSmp;vcltouch;vclwinx;vclx;xmlrtl;$(PackageImports)</PackageImports>
         <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
     </PropertyGroup>
@@ -1096,25 +1094,6 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="..\include\Poco\UnWindows.h" Configuration="Release" Class="File">
-                    <Platform Name="Win32">
-                        <Enabled>false</Enabled>
-                        <RemoteName>UnWindows.h</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="Win64">
-                        <RemoteName>UnWindows.h</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="OSX32">
-                        <RemoteName>UnWindows.h</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="All Platforms">
-                        <RemoteDir>.\include\Poco</RemoteDir>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="..\include\Poco\URI.h" Configuration="Release" Class="File">
                     <Platform Name="Win32">
                         <Enabled>false</Enabled>
@@ -1127,6 +1106,25 @@
                     </Platform>
                     <Platform Name="OSX32">
                         <RemoteName>URI.h</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="All Platforms">
+                        <RemoteDir>.\include\Poco</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\include\Poco\UnWindows.h" Configuration="Release" Class="File">
+                    <Platform Name="Win32">
+                        <Enabled>false</Enabled>
+                        <RemoteName>UnWindows.h</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteName>UnWindows.h</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteName>UnWindows.h</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                     <Platform Name="All Platforms">
@@ -2164,6 +2162,24 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="..\include\Poco\RWLock_Android.h" Configuration="Debug" Class="File">
+                    <Platform Name="Win32">
+                        <RemoteName>RWLock_Android.h</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteName>RWLock_Android.h</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteName>RWLock_Android.h</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="All Platforms">
+                        <RemoteDir>.\include\Poco</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="..\include\Poco\Configurable.h" Configuration="Debug" Class="File">
                     <Platform Name="Win32">
                         <RemoteName>Configurable.h</RemoteName>
@@ -2194,25 +2210,6 @@
                     </Platform>
                     <Platform Name="OSX32">
                         <RemoteName>DirectoryIterator_WIN32.h</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="All Platforms">
-                        <RemoteDir>.\include\Poco</RemoteDir>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="..\include\Poco\Path_WIN32.h" Configuration="Release" Class="File">
-                    <Platform Name="Win32">
-                        <Enabled>false</Enabled>
-                        <RemoteName>Path_WIN32.h</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="Win64">
-                        <RemoteName>Path_WIN32.h</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="OSX32">
-                        <RemoteName>Path_WIN32.h</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                     <Platform Name="All Platforms">
@@ -2370,17 +2367,18 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="..\include\Poco\RWLock_Android.h" Configuration="Debug" Class="File">
+                <DeployFile LocalName="..\include\Poco\Path_WIN32.h" Configuration="Release" Class="File">
                     <Platform Name="Win32">
-                        <RemoteName>RWLock_Android.h</RemoteName>
+                        <Enabled>false</Enabled>
+                        <RemoteName>Path_WIN32.h</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                     <Platform Name="Win64">
-                        <RemoteName>RWLock_Android.h</RemoteName>
+                        <RemoteName>Path_WIN32.h</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                     <Platform Name="OSX32">
-                        <RemoteName>RWLock_Android.h</RemoteName>
+                        <RemoteName>Path_WIN32.h</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                     <Platform Name="All Platforms">
@@ -3850,25 +3848,6 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="..\include\Poco\File_VMS.h" Configuration="Release" Class="File">
-                    <Platform Name="Win32">
-                        <Enabled>false</Enabled>
-                        <RemoteName>File_VMS.h</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="Win64">
-                        <RemoteName>File_VMS.h</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="OSX32">
-                        <RemoteName>File_VMS.h</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="All Platforms">
-                        <RemoteDir>.\include\Poco</RemoteDir>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="..\include\Poco\PBKDF2Engine.h" Configuration="Debug" Class="File">
                     <Platform Name="Win32">
                         <RemoteName>PBKDF2Engine.h</RemoteName>
@@ -3905,6 +3884,43 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="..\include\Poco\UTF8Encoding.h" Configuration="Debug" Class="File">
+                    <Platform Name="Win32">
+                        <RemoteName>UTF8Encoding.h</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteName>UTF8Encoding.h</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteName>UTF8Encoding.h</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="All Platforms">
+                        <RemoteDir>.\include\Poco</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\include\Poco\File_VMS.h" Configuration="Release" Class="File">
+                    <Platform Name="Win32">
+                        <Enabled>false</Enabled>
+                        <RemoteName>File_VMS.h</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteName>File_VMS.h</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteName>File_VMS.h</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="All Platforms">
+                        <RemoteDir>.\include\Poco</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="..\include\Poco\LogFile_WIN32.h" Configuration="Release" Class="File">
                     <Platform Name="Win32">
                         <Enabled>false</Enabled>
@@ -3924,36 +3940,17 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="..\include\Poco\UUID.h" Configuration="Release" Class="File">
+                <DeployFile LocalName="..\include\Poco\NamedMutex_Android.h" Configuration="Debug" Class="File">
                     <Platform Name="Win32">
-                        <Enabled>false</Enabled>
-                        <RemoteName>UUID.h</RemoteName>
+                        <RemoteName>NamedMutex_Android.h</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                     <Platform Name="Win64">
-                        <RemoteName>UUID.h</RemoteName>
+                        <RemoteName>NamedMutex_Android.h</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                     <Platform Name="OSX32">
-                        <RemoteName>UUID.h</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="All Platforms">
-                        <RemoteDir>.\include\Poco</RemoteDir>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="..\include\Poco\NumberParser.h" Configuration="Debug" Class="File">
-                    <Platform Name="Win32">
-                        <RemoteName>NumberParser.h</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="Win64">
-                        <RemoteName>NumberParser.h</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="OSX32">
-                        <RemoteName>NumberParser.h</RemoteName>
+                        <RemoteName>NamedMutex_Android.h</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                     <Platform Name="All Platforms">
@@ -4018,17 +4015,18 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="..\include\Poco\UTF8Encoding.h" Configuration="Debug" Class="File">
+                <DeployFile LocalName="..\include\Poco\UUID.h" Configuration="Release" Class="File">
                     <Platform Name="Win32">
-                        <RemoteName>UTF8Encoding.h</RemoteName>
+                        <Enabled>false</Enabled>
+                        <RemoteName>UUID.h</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                     <Platform Name="Win64">
-                        <RemoteName>UTF8Encoding.h</RemoteName>
+                        <RemoteName>UUID.h</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                     <Platform Name="OSX32">
-                        <RemoteName>UTF8Encoding.h</RemoteName>
+                        <RemoteName>UUID.h</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                     <Platform Name="All Platforms">
@@ -4110,17 +4108,17 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="..\include\Poco\NamedMutex_Android.h" Configuration="Debug" Class="File">
+                <DeployFile LocalName="..\include\Poco\NumberParser.h" Configuration="Debug" Class="File">
                     <Platform Name="Win32">
-                        <RemoteName>NamedMutex_Android.h</RemoteName>
+                        <RemoteName>NumberParser.h</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                     <Platform Name="Win64">
-                        <RemoteName>NamedMutex_Android.h</RemoteName>
+                        <RemoteName>NumberParser.h</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                     <Platform Name="OSX32">
-                        <RemoteName>NamedMutex_Android.h</RemoteName>
+                        <RemoteName>NumberParser.h</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                     <Platform Name="All Platforms">
@@ -13345,7 +13343,16 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployClass Name="ProjectiOSDeviceResourceRules"/>
+                <DeployClass Name="DependencyModule">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.dll;.bpl</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                </DeployClass>
                 <DeployClass Name="ProjectOSXResource">
                     <Platform Name="OSX32">
                         <RemoteDir>Contents\Resources</RemoteDir>
@@ -13659,16 +13666,7 @@
                         <Operation>1</Operation>
                     </Platform>
                 </DeployClass>
-                <DeployClass Name="DependencyModule">
-                    <Platform Name="Win32">
-                        <Operation>0</Operation>
-                        <Extensions>.dll;.bpl</Extensions>
-                    </Platform>
-                    <Platform Name="OSX32">
-                        <Operation>1</Operation>
-                        <Extensions>.dylib</Extensions>
-                    </Platform>
-                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceResourceRules"/>
                 <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
