@@ -43,6 +43,22 @@
 #	define _SW_DENORMAL 0x00080000 // denormal status bit
 #endif
 
+#ifndef _MCW_RC
+#	define  _MCW_RC     0x00000300
+#endif
+#ifndef _RC_CHOP
+#	define  _RC_CHOP 0x00000300
+#endif
+#ifndef _RC_UP
+#	define  _RC_UP   	0x00000200
+#endif
+#ifndef _RC_DOWN
+#	define  _RC_DOWN    0x00000100
+#endif
+#ifndef _RC_NEAR
+#	define  _RC_NEAR    0x00000000
+#endif
+
 
 namespace Poco {
 

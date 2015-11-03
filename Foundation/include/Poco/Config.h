@@ -31,7 +31,7 @@
 
 
 // Define to disable implicit linking
-// #define POCO_NO_AUTOMATIC_LIBS
+#define POCO_NO_AUTOMATIC_LIBS
 
 
 // Define to disable automatic initialization
@@ -39,7 +39,7 @@
 // initialization framework-wide (e.g. Net
 // on Windows, all Data back-ends, etc).
 // 
-// #define POCO_NO_AUTOMATIC_LIB_INIT
+#define POCO_NO_AUTOMATIC_LIB_INIT
 
 
 // Define to disable FPEnvironment support
@@ -155,7 +155,7 @@
 
 // No IPv6 support
 // Define to disable IPv6
-// #define POCO_NET_NO_IPv6
+#define POCO_NET_NO_IPv6
 
 
 // Windows CE has no locale support
